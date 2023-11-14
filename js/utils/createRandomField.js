@@ -4,7 +4,7 @@ export function createRandomField(x, y, cardList) {
   for (let i = 0; i < y; i++) {
     field[i] = [];
     for (let j = 0; j < x; j++) {
-      const randomIndex = Math.floor(Math.random() * 4);
+      const randomIndex = Math.floor(Math.random() * cardList.length);
       field[i][j] = cardList[randomIndex];
     }
   }
